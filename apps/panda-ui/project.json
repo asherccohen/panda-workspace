@@ -16,7 +16,7 @@
         "main": "apps/panda-ui/src/main.tsx",
         "tsConfig": "apps/panda-ui/tsconfig.app.json",
         "assets": ["apps/panda-ui/src/favicon.ico", "apps/panda-ui/src/assets"],
-        "styles": [],
+        "styles": ["apps/panda-ui/src/index.css"],
         "scripts": [],
         "isolatedConfig": true,
         "webpackConfig": "apps/panda-ui/webpack.config.js"
@@ -86,6 +86,21 @@
           "ci": true,
           "codeCoverage": true
         }
+      }
+    },
+    "panda-css-init": {
+      "root": "libs/themes",
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/panda-ui/src && npx panda init -p"
+          },
+          {
+            "command": "rm -r apps/panda-ui/src/styled-system"
+          }
+        ],
+        "parallel": false
       }
     }
   },

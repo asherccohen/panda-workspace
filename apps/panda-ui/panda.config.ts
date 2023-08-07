@@ -5,7 +5,12 @@ export default defineConfig({
   preflight: true,
 
   // Where to look for your css declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+  include: [
+    '../../node_modules/@acme-org/design-system/src/**/*.tsx',
+    '../../node_modules/@acme-org/themes/src/**/*.tsx',
+    './src/**/*.{js,jsx,ts,tsx}',
+    './pages/**/*.{js,jsx,ts,tsx}',
+  ],
 
   // Files to exclude
   exclude: [],
@@ -14,9 +19,6 @@ export default defineConfig({
   theme: {
     extend: {},
   },
-
-  // The output directory for your css system
-  // https://panda-css.com/docs/guides/component-library#include-the-src-files
   emitPackage: true,
   outdir: '@acme-org/themes/styled-system',
 });

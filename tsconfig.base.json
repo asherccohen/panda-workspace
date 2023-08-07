@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@codetank/themes": ["libs/themes/src/index.ts"]
+      "@acme-org/design-system": ["libs/design-system/src/index.ts"],
+      "@acme-org/themes": ["libs/themes/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

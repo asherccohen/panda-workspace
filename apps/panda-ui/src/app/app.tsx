@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import NxWelcome from './nx-welcome';
+import { Button } from '@acme-org/design-system';
 
 const StyledApp = styled.div`
   // Your style here
@@ -9,7 +9,8 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
-      <NxWelcome title="panda-ui" />
+      {/* <NxWelcome title="panda-ui" /> */}
+      <Button>Panda Button</Button>
     </StyledApp>
   );
 }
