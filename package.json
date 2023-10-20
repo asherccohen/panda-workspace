@@ -23,7 +23,7 @@
     "@nx/rollup": "16.6.0",
     "@nx/webpack": "16.6.0",
     "@nx/workspace": "16.6.0",
-    "@pandacss/dev": "^0.9.0",
+    "@pandacss/dev": "^0.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@rollup/plugin-url": "^7.0.0",
     "@svgr/rollup": "^8.0.1",
